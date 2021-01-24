@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./prism.css" />
+    <link rel="shortcut icon" href="./logo.png" type="image/png" />
+    <title>CheatSheet by Suhas</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="./logo.png" alt="" />
+      <span>CheatSheet by Suhas</span>
+    </div>
+    <div class="cheetsheet-container">
+      <ol>
+        <!-- HTML  -->
+        <li>
+          <h3>HTML boilerplate</h3>
+          <pre><code class="language-html"> &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </li>
+        <h3>Css boilerplate</h3>
+        <!-- Css  -->
+        <pre><code class="language-css">
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}</code></pre>
+
+        <li>
+          <h3>C boilerplate</h3>
+          <pre><code class="language-c">#include &lt;stdio.h&gt;
+int main(){
+    return 0;
+}
+</code></pre>
+        </li>
+
+        <!-- c++  -->
+        <li>
+          <h3>C++ boilerplate</h3>
+          <pre><code class="language-c++">#include&lt;iostream&gt;
+using namespace std;
+
+int main(){
+    
+    return 0;
+}</code></pre>
+        </li>
+
+        <!-- JAVA  -->
+        <li>
+          <h3>JAVA boilerplate</h3>
+          <pre><code class="language-java">package packageName;
+public class ClassName {
+    public static void main(String[] args) {
+        
+    }
+}
+</code></pre>
+        </li>
+
+        <li>
+          <h3>React Js (simple) boilerplate</h3>
+          <pre><code class="language-javascript">import React from 'react'
+
+function app() {
+    return (
+        &lt;div&gt;
+            
+        &lt;div&gt;
+    )
+}
+
+export default app
+            
+          </code></pre>
+        </li>
+
+        <li>
+          <h3>React js (=>) boilerplate</h3>
+          <pre><code class="language-javascript">import React from 'react'
+
+const app = () =&gt; {
+    return (
+        &lt;div&gt;
+            
+        &lt;/div&gt;
+    )
+}
+
+export default app
+
+            </code></pre>
+        </li>
+
+        <li>
+          <h3>Express js App</h3>
+          <pre><code class="language-javascript">const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+            </code></pre>
+        </li>
+
+        <li>
+          <h3>Node js boilerplate</h3>
+          <pre><code class="language-javascript">const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
+          </code></pre>
+        </li>
+      </ol>
+    </div>
+    <script src="./prism.js"></script>
+  </body>
+</html>
