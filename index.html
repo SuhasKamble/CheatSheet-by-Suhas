@@ -139,6 +139,21 @@ server.listen(port, hostname, () => {
 });
           </code></pre>
         </li>
+
+        <li>
+          <h3>Firebase.js</h3>
+          <pre><code class="language-javascript">
+import firebase from "firebase";
+
+const firebaseConfig = {};
+
+const firebaseApp = firebase.initalizeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+
+export default db;
+            
+          </code></pre>
+        </li>
       </ol>
     </div>
     <script src="./prism.js"></script>
